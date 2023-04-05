@@ -1,0 +1,70 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int r,c;
+    printf("Enter the size of row:");
+    scanf("%d",&r);
+    printf("Enter the size of column:");
+    scanf("%d",&c);
+    
+    
+    int x[r][c],y[r][c],z[r][c];    //2-d array - declare
+    
+    
+    //getting values as input from the user
+    //1st matrix value as input
+    printf("Enter the value of 1st matrix: ");
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            scanf("%d",&x[i][j]);
+}
+    }
+    
+    //2nd matrix value input
+    printf("Enter the value of 2nd matrix: ");
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            scanf("%d",&y[i][j]);
+        }
+    }
+    
+    //print the values of 2D array
+    
+    printf("1st matix:\n");
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            printf("%d\t",x[i][j]);
+        }
+        printf("\n");
+    }
+    //display 2nd matrix
+    printf("2nd matix:\n");
+    for(int i
+for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            printf("%d\t",y[i][j]);
+        }
+        printf("\n");
+    }
+    
+    //sum of matrix
+    for(int i=0;i<r;i++)    //i=0
+    {
+        for(int j=0;j<c;j++)    //j=0 1
+        {
+           z[i][j] = x[i][j] + y[i][j];  //z[0][1] = x[0][1] + y[0][1]
+          printf("%d\t",z[i][j]);
+        }
+    }
+    
+  
